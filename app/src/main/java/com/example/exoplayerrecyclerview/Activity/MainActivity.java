@@ -29,8 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private String thirdVideo = "https://d17h27t6h515a5.cloudfront.net/topher/2017/April/58ffdcc8_5-mix-wet-and-cry-batter-together-brownies/5-mix-wet-and-cry-batter-together-brownies.mp4";
     private String fourthVideo = "https://html5demos.com/assets/dizzy.mp4";
     private String fifthVideo = "https://www.demonuts.com/Demonuts/smallvideo.mp4";
-
-
+    private String sixthVideo = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -121,10 +120,19 @@ public class MainActivity extends AppCompatActivity {
                 "https://androidwave.com/media/images/exo-player-in-recyclerview-in-android-4.png");
         mediaObject5.setUrl(fifthVideo);
 
+        MediaObject mediaObject6 = new MediaObject();
+        mediaObject6.setId(6);
+        mediaObject6.setUserHandle("@sachin.patel");
+        mediaObject6.setTitle("This is tet title ");
+        mediaObject6.setCoverUrl(
+                "https://androidwave.com/media/images/exo-player-in-recyclerview-in-android-4.png");
+        mediaObject6.setUrl(sixthVideo);
+
         mediaObjectList.add(mediaObject);
         mediaObjectList.add(mediaObject2);
         mediaObjectList.add(mediaObject3);
         mediaObjectList.add(mediaObject4);
         mediaObjectList.add(mediaObject5);
+        mediaObjectList.add(mediaObject6);
     }
 }
